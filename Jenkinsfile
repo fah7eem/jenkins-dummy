@@ -7,6 +7,9 @@ pipeline {
                 sh 'php build.php' 
             }
         }
+	    
+	    
+	    
         stage('Front end Test'){
 		
 
@@ -24,14 +27,14 @@ pipeline {
                 }
 
 
-        }
-
 	 stage('Api tests'){
             steps {
                 sh 'php backend.php'
             }
                 }
-
+	}
+	    
+	    
         stage('Deploy') {
             steps {
                 sh 'php deploy.php'
