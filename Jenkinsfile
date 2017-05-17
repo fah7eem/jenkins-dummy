@@ -25,7 +25,7 @@ pipeline {
                 sh 'php frontend2.php'
             }
                 }
-
+	}
 
 	 stage('Api tests'){
             steps {
