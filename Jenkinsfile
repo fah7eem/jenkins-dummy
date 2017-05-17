@@ -8,10 +8,6 @@ pipeline {
             }
         }
 	    
-	    
-	    
-        stage('Front end Test'){
-		
 
 	stage('Login and Browse'){
             steps {
@@ -25,8 +21,7 @@ pipeline {
                 sh 'php frontend2.php'
             }
                 }
-	}
-
+	    
 	 stage('Api tests'){
             steps {
                 sh 'php backend.php'
