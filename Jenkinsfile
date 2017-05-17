@@ -10,7 +10,7 @@ pipeline {
 	    
 	    
 	    
-        stage('Front end Test'){
+        stages('Front end Test'){
 		
 
 	stage('Login and Browse'){
